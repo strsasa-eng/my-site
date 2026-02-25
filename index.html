@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Pack</title>
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/tools.css">
+    <link rel="icon" href="SPP.ico" type="image/x-icon">
+	<meta http-equiv="refresh" content="200">
+</head>
+
+<header>
+    <h1><a href="index.html">Starter Pack</a></h1>
+</header>
+
+<body>
+    <div class="sidebar">
+        <ul><li><h2>Pomocne</h2></li>
+            <li><a href="https://nestle.service-now.com/itsp?id=nesa_itsp_index" onclick="openInNewWindow(event, this.href)">IT service portal</a></li>
+            <li><a href="https://nestle.evk.pl/logowanie.html" onclick="openInNewWindow(event, this.href)">Używany sprzęt</a></li>
+            <li><a href="https://nlms.csod.com/ui/lms-learner-home/home?tab_page_id=-200300006&tab_id=-2" onclick="openInNewWindow(event, this.href)">ILearn</a></li>
+            <li><a href="https://nesgpt.genai.nestle.com/?trk=public_post_comment-text" onclick="openInNewWindow(event, this.href)">NesGPT</a></li>
+            <li><a href="https://chatgpt.com/" onclick="openInNewWindow(event, this.href)">ChatGPT</a></li>
+            <li><a href="https://app.powerbi.com/groups/me/apps/39516a30-ecae-4d88-afa0-2d669ff93260/reports/7903b9e2-1af2-426d-bb15-baf8bf67c0a3/eb7995bd294db18cd897?ctid=12a3af23-a769-4654-847f-958f3d479f4a&experience=power-bi" onclick="openInNewWindow(event, this.href)">PowerBI</a></li>
+            <li><a href="https://nowawies01.poka.io/app/" onclick="openInNewWindow(event, this.href)">POKA</a></li>
+            <li><a href="https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI2MjYyNzE3NjQ0OSJ9/new" onclick="openInNewWindow(event, this.href)">VIVA</a></li>
+            <li><a href="https://teams.microsoft.com/l/chat/19:7de1b6e6b2804481acb5798289835c96@thread.v2/conversations?context=%7B%22contextType%22%3A%22chat%22%7D" onclick="openInNewWindow(event, this.href)">Teams</a></li>
+            <li><a href="#" onclick="openContactCard(event)">Kontakt</a></li>
+        </ul>
+        <div class="sidebar-tools">
+            <a href="https://outlook.office.com/mail/0/?deeplink=mail%2F0%2F%3Fnlp%3D0" class="mail-btn" aria-label="Napisz wiadomość" onclick="openInNewWindow(event, this.href)"></a>
+            <div class="safety">
+                <button class="safety-btn" id="safetyBtn" type="button" aria-expanded="false" aria-controls="safetyPanel" aria-label="Ugolok bezpieczenstwa"></button>
+                <div class="safety-panel" id="safetyPanel">
+                    <div class="safety-actions">
+                        <button class="safety-level tooltip" type="button" data-key="SUSA" data-tooltip="Widziś niebezpieczeństwo dla innych? Naciśni">SUSA</button>
+                        <button class="safety-level tooltip" type="button" data-key="DRA"  data-tooltip="Dynamiczna Ocena Ryzyka (DRA) – jakie niebezpieczeństwo Cię czeka na maszynie?">DRA</button>
+                        <button class="safety-level tooltip" type="button" data-key="TAG"  data-tooltip="Widziś nieprawidłowości na maszynie? Zgłoś">TAG</button>
+                        <button class="safety-level tooltip" type="button" data-key="MAIL" data-tooltip="Widziś coś czego niema w systemie TAGowania? Napisz mail do inżyniera">Inżynier</button>
+                        <button class="safety-level wide tooltip" type="button" data-key="OTHER" data-tooltip="Masz jakiś poważny problem i nie wieś do kogo zgłosić? Zgłoś tu">Zgłoszenie innego problemu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="stanowisko">
+        <button id="stanowiskoBtn" class="stanowisko-btn" aria-expanded="false" aria-controls="stanowiskoPanel">
+            <!-- иконка чемодана -->
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="ico"><path d="M9 7V6a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3v1h2.5A2.5 2.5 0 0 1 20 9.5V17a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V9.5A2.5 2.5 0 0 1 6.5 7H9zm2 0h2V6a1 1 0 0 0-1-1h0a1 1 0 0 0-1 1v1zM4 11h16v2H4v-2z"/></svg>
+                Stanowisko
+            <span class="chev" aria-hidden="true"></span>
+        </button>
+        <div id="stanowiskoPanel" class="stanowisko-panel" hidden>
+            <a class="slot-card" href="#" data-station="ffs">
+            <span class="slot-title">FFS</span>
+            <span class="slot-desc">Strona dla pracowników FFS</span>
+            </a>
+        
+            <a class="slot-card" href="#" data-station="autoklawy">
+            <span class="slot-title">Autoklawy</span>
+            <span class="slot-desc">Strona dla pracowników autoklawów</span>
+            </a>
+        
+            <a class="slot-card" href="#" data-station="proces">
+            <span class="slot-title">Proces</span>
+            <span class="slot-desc">Strona dla pracowników procesu</span>
+            </a>
+        
+            <a class="slot-card" href="#" data-station="mpk">
+            <span class="slot-title">MPK</span>
+            <span class="slot-desc">Strona dla pracowników multypakingu</span>
+            </a>
+       </div>
+    </section>
+
+    <div class="content">
+        <div class="center-ui" id="centerUI">
+            <div class="allButtons">
+                <button class="b tooltip" data-url="https://nestle.sharepoint.com/:x:/r/teams/ZmianaZielona/_layouts/15/Doc.aspx?sourcedoc=%7BFF136888-90D6-4D2B-9433-1BD6A588107D%7D&file=Zmiana+niebieska+2026.xlsx&action=default&mobileredirect=true&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1761418895585&web=1" data-tooltip="Harmonogram pracy zmiany niebieskiej" onclick="openLink(event)">Grafik</button>
+                <button class="b tooltip" data-url="https://nestle.sharepoint.com/:x:/r/teams/Planprodukcyjny6-72/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B32c7ceab-b07b-48db-a56a-d3c70c4d64d3%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1762198344262&web=1&ovuser=12a3af23-a769-4654-847f-958f3d479f4a%2CAnton.Prodan%40pl.nestle.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA5MTExNjAxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" data-tooltip="Aktualny plan produkcyjny fazy 6/7" onclick="openLink(event)">Plan Produkcyjny</button>
+                
+
+                <div class="dropdown">
+                    <button class="b tooltip" data-url="#" data-tooltip="DMO - główne narzędzie do wykonywania cheków">DMO</button>
+                    <div class="dropdown-content" id="dmoList">
+                        <a href="https://plwrol0254.nestle.com/dmo" onclick="openInNewWindow(event, this.href)">Faza 6</a>
+                        <a href="https://plwrol0084.nestle.com/dmo" onclick="openInNewWindow(event, this.href)">Faza 7</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" id="plikiDropdown">
+                    <button class="b">Pliki</button>
+                    <div class="dropdown-content" id="plikiList"></div>
+                </div>
+
+                <div class="dropdown" id="sapDropdown">
+                    <button class="b tooltip"
+                    data-tooltip="Tranzakcje SAP, w plikach jest do tego instrukcja">SAP</button>
+                    <div class="dropdown-content" id="sapList"></div>
+                    <div class="video-preview" id="videoPreview">
+                        <video id="previewVideo" muted loop></video>
+                    </div>
+                </div>
+
+                <div class="dropdown" id="instrukcjeDropdown">
+                    <button class="b">Instrukcje</button>
+                    <div class="dropdown-content" id="instrukcjeList"></div>
+                </div>
+
+                <button class="b tooltip" data-url="https://wms.wro.pl.nestle.com/WMS_Extentions/Wms/WasteAreaSelection?wastePointsModelID=4&errorMessage=ID%20punktu%20odpadu:%20:%20F7-L12-NOVA23%2C%20Kontener:%20%20:%2010-10-10-2440%20-%20Kontener%20zosta%C5%82%20prawid%C5%82owo%20przypisany%20do%20punktu%20odpadu." onclick="openLink(event)" data-tooltip="Strona WMS do wyboru strefy odpadów i przypięcia binów">WMS</button>
+                <button class="b tooltip" data-url="http://plwroa0006/common/login/" data-tooltip="Tu możesz sprawdzić, jak powinien wyglądać produkt." onclick="openLink(event)">Grading</button>
+                <button class="b tooltip" data-url="https://apps.powerapps.com/play/e/05e8eefc-65ae-e3f5-a2bd-4a27ec468350/a/4bac5811-fdf5-495a-a077-3f855d8702d0?tenantId=12a3af23-a769-4654-847f-958f3d479f4a&hint=d860ea56-a3b9-4230-bd47-c9fe60cf58a4&sourcetime=1733746156858&source=portal" data-tooltip="Wypisujemy podczas zdarzeń jakościowych" onclick="openLink(event)">Incydenty jakościowe</button>
+            </div>
+            <div class="iconRow" id="iconRow">
+                <button class="iconBtn" data-panel="panelSearch" aria-label="Search">🔍</button>
+                <button class="iconBtn" data-panel="panelVideo"  aria-label="Video">🎬</button>
+                <button class="iconBtn" data-panel="panelPhoto"  aria-label="Photo">🖼</button>
+            </div>
+            <div class="iconPanels" id="iconPanels">
+
+                <div class="panel" id="panelSearch">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Szukaj..." oninput="highlightText()">
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card" id="cardBox"></div>
+                        <div class="card" id="contactsBox"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel" id="panelVideo">
+                <div class="panel" id="panelVideo">
+                    <div class="reels" id="reels">
+                        <div class="reel">
+                            <video src="videos/demo1.mp4" controls playsinline></video>
+                            <div class="reelCaption">Подпись 1</div>
+                        </div>
+                        <div class="reel">
+                            <video src="videos/demo2.mp4" controls playsinline></video>
+                            <div class="reelCaption">Подпись 2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel" id="panelPhoto">
+                 <div class="panel" id="panelPhoto">
+                    <div class="photoBox">
+                        <img class="qr" src="pictures/qr-upload.png" alt="QR upload">
+                        <div class="photoActions">
+                            <a class="b" href="https://drive.google.com/drive/folders/1qOtRtunbFbhfL_USX2SYbXAxSQmBWOPA" target="_blank" rel="noopener">Скачать фото</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-card-modal" id="contactCard">
+            <div class="contact-card">
+                <span class="close-btn" onclick="closeContactCard()">&times;</span>
+                <img src="pictures/1.jpg" alt="Your Name" class="contact-photo">
+                <div class="contact-info">
+                    <p>Anton Prodan</p>
+                    <p><a href="tel:+48508308973">508 308 973</a></p>
+                    <p><a href="https://outlook.office.com/mail/deeplink/compose?to=Anton.Prodan@pl.nestle.com" onclick="openInNewWindow(event, this.href)" >Anton.Prodan@pl.nestle.com</a></p>
+                    <p><a href="https://teams.microsoft.com/l/chat/19:6fd2abbd-c966-4867-96d2-ad4e71cfd6fc_928925bd-f1a3-4cb0-88f6-5d03af9f73dd@unq.gbl.spaces/conversations?context=%7B%22contextType%22%3A%22chat%22%7D" onclick="openInNewWindow(event, this.href)">Microsoft Teams</a></p>
+                </div>
+            </div>
+    </div>
+
+    <script src="scripts/stations-data.js"></script>
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/tools.js"></script>
+</body>
+</html>
