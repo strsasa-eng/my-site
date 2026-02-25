@@ -1,0 +1,346 @@
+.b {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+    /* Плавные переходы */
+}
+
+.b:hover {
+    background-color: #448947;
+    transform: translateY(-2px);
+
+    /* Легкое поднятие кнопки */
+}
+
+.b.clicked {
+    background-color: #45a049;
+}
+
+.allButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-container {
+    margin-top: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+
+    /* скрываем выпадающий список по умолчанию */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+    /* показываем выпадающий список при наведении на .dropdown */
+}
+
+.dropdown:hover .b {
+    background-color: #3e8e41;
+
+    /* изменяем цвет кнопки при наведении */
+}
+
+/* Контейнер для подсказки */
+.tooltip {
+    position: relative;
+    z-index: 100;
+
+    /* Подсказка будет над другими элементами */
+}
+
+/* Скрытая подсказка */
+.tooltip::after {
+    content: attr(data-tooltip);
+
+    /* Текст подсказки */
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* Видимая подсказка */
+.tooltip.show-tooltip::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Стили для модального окна */
+.contact-card-modal {
+    display: none;
+
+    /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125vh;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /* Полупрозрачный фон */
+    z-index: 1000;
+}
+
+/* Карточка контактов */
+.contact-card {
+    position: relative;
+    width: 33%;
+    max-width: 400px;
+    height: auto;
+    max-height: 400px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* Фото контакта */
+.contact-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #333;
+}
+
+/* Стилизация текста */
+.contact-info p {
+    margin: 5px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Имя контакта */
+.contact-info p:first-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Ссылки и текст */
+.contact-info a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #005bb5;
+}
+
+/* Кнопка закрытия */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Палитра */
+:root {
+    --c-bg: #ffffff;
+    --c-text: #111111;
+    --c-ink: #000000;
+    --c-lime: #8cff3a;
+
+    /* салатовый */
+    --c-lime-ghost: #8cff3a33;
+
+    /* полупрозрачный */
+}
+
+/* Контейнер секции */
+.stanowisko-mpk {
+    position: relative;
+    margin: -95px 0 24px;
+}
+
+/* Контейнер секции */
+.stanowisko {
+    position: relative;
+    margin: 16px 0 24px;
+}
+
+/* Уникальная кнопка */
+.stanowisko-btn {
+    appearance: none;
+    border: 0;
+    padding: 14px 18px 14px 14px;
+    border-radius: 14px;
+    background: #000;
+
+    /* черная база */
+    color: #fff;
+
+    /* белый текст */
+    font-weight: 700;
+    letter-spacing: .2px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 7px;
+    gap: 10px;
+    cursor: pointer;
+    transition: box-shadow .25s ease, transform .15s ease;
+}
+
+.stanowisko-btn .ico {
+    width: 20px;
+    height: 20px;
+    fill: var(--c-lime);
+}
+
+.stanowisko-btn .chev {
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid var(--c-lime);
+    border-right: 2px solid var(--c-lime);
+    transform: rotate(45deg);
+    margin-left: 2px;
+    transition: transform .2s ease;
+}
+
+.stanowisko-btn[aria-expanded="true"] .chev {
+    transform: rotate(-135deg);
+}
+
+.stanowisko-btn:hover {
+    box-shadow: 0 0 0 2px var(--c-lime) inset,
+    0 8px 24px -8px rgba(0,0,0,.6),
+    0 0 32px 2px var(--c-lime-ghost);
+    transform: translateY(-1px);
+}
+
+.stanowisko-btn:active {
+    transform: translateY(0);
+}
+
+/* Панель с “окнами-кнопками” */
+.stanowisko-panel {
+    margin-top: -130px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, max-content));
+    gap: 12px;
+
+    /* анимация появления */
+    opacity: 0;
+    transform: translateY(-6px) scale(.98);
+    transition: opacity .22s ease, transform .22s ease;
+    pointer-events: none;
+}
+
+.stanowisko-panel.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* Карточки-ссылки */
+.slot-card {
+    text-decoration: none;
+    background: #fff;
+    color: var(--c-text);
+    border-radius: 12px;
+    padding: 14px 16px;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px -12px rgba(0,0,0,.25);
+    transition: border-color .2s ease, box-shadow .2s ease, transform .15s ease;
+}
+
+.slot-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 14px;
+    pointer-events: none;
+    box-shadow: 0 0 0 0 var(--c-lime-ghost);
+    transition: box-shadow .25s ease;
+}
+
+.slot-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--c-lime);
+    box-shadow: 0 14px 28px -14px rgba(0,0,0,.3);
+}
+
+.slot-card:hover::before {
+    box-shadow: 0 0 0 2px var(--c-lime) inset, 0 0 30px 0 var(--c-lime-ghost);
+}
+
+.slot-title {
+    font-weight: 800;
+    display: block;
+}
+
+.slot-desc {
+    font-size: 12px;
+    opacity: .75;
+}
+
+@media (max-width: 700px){
+    .stanowisko-panel {
+        grid-template-columns: 1fr;
+    }
+}

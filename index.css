@@ -1,0 +1,645 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #cec3c3, #c7c1c17b);
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
+}
+
+header {
+    background-color: #000;
+
+    /* Черный фон */
+    padding: 7px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+
+    /* Цвет текста по умолчанию */
+}
+
+header a {
+    text-decoration: none;
+
+    /* Убираем подчеркивание */
+    color: inherit;
+
+    /* Унаследовать цвет заголовка */
+    transition: color 0.3s ease, transform 0.2s ease;
+
+    /* Плавная анимация цвета и увеличения */
+}
+
+header a:hover {
+    color: #D3D3D3;
+
+    /* Цвет текста при наведении */
+    transform: scale(1.02);
+
+    /* Увеличение текста на 5% */
+    display: inline-block;
+
+    /* Обеспечивает корректное увеличение */
+}
+
+.card-container {
+    width: calc(100% - 40px);
+
+    /* Учитываем отступы от боковой панели */
+    max-width: 1200px;
+
+    /* Максимальная ширина для контента */
+    margin: 0 auto;
+
+    /* Центрируем контейнер */
+    text-align: center;
+
+    /* Центрируем содержимое контейнера */
+}
+
+.card {
+    text-align: left;
+
+    /* Выравнивание текста внутри карточки по левому краю */
+    margin: 0 auto;
+
+    /* Центрируем карточку */
+    width: 100%;
+
+    /* Или задайте фиксированную ширину */
+    max-width: 300px;
+
+    /* Пример: максимальная ширина для карточки */
+    border: 1px solid #ccc;
+
+    /* Пример рамки */
+    padding: 20px;
+
+    /* Пример внутреннего отступа */
+    margin-bottom: 20px;
+
+    /* Отступ между карточками */
+}
+
+.card:hover {
+    transform: scale(1.05);
+
+    /* Увеличение карточки при наведении */
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+
+    /* Отступы для заголовка */
+}
+
+.card p {
+    margin: 0;
+
+    /* Убираем отступы для абзаца */
+}
+
+/* Стили для контейнера поиска */
+.search-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.day-btn img {
+    width: 400px;
+    height: 45px;
+    pointer-events: none ;
+
+    /* важно */
+}
+
+.day-btn :hover {
+    background: linear-gradient(145deg, #c1c0c0, #b5b2b2);
+    box-shadow: 0 0 11px rgba(0,0,0,0.4);
+    transform: translateY(-1px);
+}
+
+.day-btn:hover img {
+    filter: brightness(1.2);
+}
+
+.day-btn:active {
+    background: #8c8585;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.8),
+        0 0 12px rgba(0,0,0,0.3);
+    transform: scale(0.96);
+}
+
+/* Стили для поля поиска */
+#search-input {
+    padding: 100px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+/* Подсветка для найденного текста */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Видео превью слева */
+.video-preview {
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    width: 840px;
+    height: 640px;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    z-index: 9999;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 20px rgba(140, 143, 139, 0.389);
+    border: 1px solid rgba(165, 157, 157, 0.256);
+}
+
+.video-preview video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.video-preview.show {
+    display: block;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    top: 100%;
+    left: 0;
+    min-width: 280px;
+    padding: 8px 0;
+    border-radius: 14px;
+    z-index: 999;
+    scroll-behavior: smooth;
+
+    /* ПРОЗРАЧНЫЙ ГРАДИЕНТ */
+    background: linear-gradient(
+        145deg,
+        rgba(210, 207, 207, 0.55),
+        rgba(133, 130, 130, 0.35)
+    );
+
+    /* ЛЁГКАЯ ТЕНЬ */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25),
+        inset 0 0 4px rgba(255, 255, 255, 0.08);
+
+    /* СТЕКЛО */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 3px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Открытие */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* МОСТИК */
+.dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 12px;
+}
+
+/* Пункт меню */
+.menu-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 14px;
+    border-radius: 10px;
+    margin: 2px 3px;
+    transition: all 0.2s ease;
+    color: rgb(74, 121, 196);
+    gap: 8px;
+}
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.video-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-btn:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.menu-link {
+    display: block;
+    padding-right: 90px;
+}
+
+.dropdown-content,
+.menu-item,
+.menu-link {
+    font-family: "Segoe UI", "Inter",
+    Arial, sans-serif;
+    font-size: 16px;
+}
+
+.icon-btn {
+    width: 85px;
+    height: 85px;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.icon-btn img {
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+
+    /* важно */
+}
+
+.icon-btn:hover {
+    background: linear-gradient(145deg, #c1c0c0, #b5b2b2);
+    box-shadow: 0 0 11px rgba(0,0,0,0.4);
+    transform: translateY(-1px);
+}
+
+.icon-btn:hover img {
+    filter: brightness(1.2);
+}
+
+.icon-btn:active {
+    background: #8c8585;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.8),
+        0 0 12px rgba(0,0,0,0.3);
+}
+
+.icon-gig {
+    width: 100px;
+    height: 45px;
+    border: none;
+    border-radius: 14px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.icon-gig img {
+    width: 400px;
+    height: 45px;
+    pointer-events: none ;
+
+    /* важно */
+}
+
+.icon-gig:hover {
+    background: linear-gradient(145deg, #c1c0c0, #b5b2b2);
+    box-shadow: 0 0 11px rgba(0,0,0,0.4);
+    transform: translateY(-1px);
+}
+
+.icon-gig:hover img {
+    filter: brightness(1.2);
+}
+
+.icon-gig:active {
+    background: #8c8585;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.8),
+        0 0 12px rgba(0,0,0,0.3);
+    transform: scale(0.96);
+}
+
+.allButtons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.month-title {
+    font-weight: 600;
+    padding: 6px 12px;
+    margin-top: 6px;
+    border-bottom: 1px solid rgba(51, 45, 45, 0.877);
+}
+
+.graph-item {
+    padding: 6px 14px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.graph-item:hover {
+    background: rgba(114, 102, 102, 0.85);
+}
+
+#previewBox {
+    position: absolute;
+
+    /* прив’язка до dropdown-content */
+    top: 40%;
+
+    /* відступ від низу */
+    left: 30%;
+
+    /* по центру списку */
+    transform: translateX(-10%);
+    width: auto;
+
+    /* максимум ширини */
+    text-align: center;
+    display: none;
+
+    /* ховаємо поки hover нема */
+    pointer-events: none;
+
+    /* не перекриває кнопки */
+    border-radius: 6px;
+    padding: 2px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 20px rgba(140, 143, 139, 0.389);
+    border: 1px solid rgba(165, 157, 157, 0.256);
+}
+
+#previewImg {
+    display: block;
+    width: auto;
+    max-width: 99%;
+    max-height: auto;
+    object-fit: contain;
+
+    /* зберігає пропорції */
+    margin: 5px;
+}
+
+/* 🔧 ТУТ МЕНЯЕШЬ ВЫСОТУ ВСЕГО БЛОКА */
+:root {
+    --info-block-height: 260px;
+
+    /* 300–420px по вкусу */
+}
+
+/* Общий контейнер */
+.info-section {
+    width: calc(100% - 40px);
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+/* Сетка карточек */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+@media (min-width: 1400px) {
+    .info-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Карточка */
+.info-box {
+    max-height: var(--info-block-height);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(
+        145deg,
+        rgba(210, 207, 207, 0.55),
+        rgba(133, 130, 130, 0.35)
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25),
+        inset 0 0 4px rgba(255, 255, 255, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35),
+        inset 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.info-box.collapsed {
+    max-height: 52px;
+
+    /* высота заголовка */
+}
+
+.info-box.compact {
+    max-height: none;
+}
+
+.info-box.compact .info-content {
+    flex: unset;
+}
+
+/* Заголовок карточки */
+.info-header {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Кнопка свернуть */
+.toggle-btn {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.7;
+}
+
+.toggle-btn:hover {
+    opacity: 1;
+}
+
+/* Контент */
+.info-content {
+    padding: 14px 16px;
+    font-size: 15px;
+}
+
+/* Две колонки (drukarki) */
+.two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.info-col h4 {
+    margin: 0 0 6px;
+    font-size: 15px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    margin-bottom: 4px;
+}
+
+/* Automatycy – скролл */
+.info-content.scrollable {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px 16px;
+}
+
+/* Скролл аккуратный */
+.info-content.scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+
+.info-content.scrollable::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+/* Поле локального поиска */
+.local-search {
+    margin: 10px 16px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+}
+
+/* Персона */
+.person {
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.person:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Текст в блоке Służby */
+.info-content p {
+    margin: 0 0 10px;
+}
+
+/* ===== HEADER SHACHMATY ===== */
+.main-header {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* шахматный фон */
+    background-color: #ffffff;
+    background-image: linear-gradient(45deg, #d60000 25%, transparent 25%),
+        linear-gradient(-45deg, #d60000 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #d60000 75%),
+        linear-gradient(-45deg, transparent 75%, #d60000 75%);
+    background-size: 40px 40px;
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+.header-content {
+    background: rgba(255,255,255,0.95);
+    padding: 4px 30px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.site-logo {
+    height: 46px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.company-logo {
+    height: 40px;
+}
+
+.header-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1b5fa3;
+    font-family: Arial, sans-serif;
+}
