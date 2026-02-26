@@ -1,0 +1,63 @@
+<svg width="240" height="150" viewBox="0 0 240 150" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Фон кнопки -->
+    <linearGradient id="btnBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4da3ff"></stop>
+      <stop offset="100%" stop-color="#1b5fa3"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- КНОПКА -->
+  <rect x="5" y="5" width="230" height="140" rx="22" fill="url(#btnBg)"></rect>
+
+  <!-- КАЛЕНДАР -->
+  <rect x="50" y="25" width="140" height="100" rx="12" fill="#e8e8e8"></rect>
+
+  <!-- ШАПКА -->
+  <rect x="50" y="25" width="140" height="22" rx="12" fill="#a9a9a9"></rect>
+
+  <!-- КРІПЛЕННЯ -->
+  <rect x="75" y="12" width="10" height="22" rx="5" fill="#333"></rect>
+  <rect x="155" y="12" width="10" height="22" rx="5" fill="#333"></rect>
+
+  <!-- СІТКА ДНІВ 7x4 -->
+  <!-- Розмір квадрата 14, відступ 4 -->
+  
+  <!-- РЯД 1 -->
+  <rect x="58" y="55" width="14" height="14" rx="2" fill="#f4b400"></rect>
+  <rect x="76" y="55" width="14" height="14" rx="2" fill="#f4b400"></rect>
+  <rect x="94" y="55" width="14" height="14" rx="2" fill="#38c172"></rect>
+  <rect x="112" y="55" width="14" height="14" rx="2" fill="#38c172"></rect>
+  <rect x="130" y="55" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+  <rect x="148" y="55" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+  <rect x="166" y="55" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+
+  <!-- РЯД 2 -->
+  <rect x="58" y="73" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+  <rect x="76" y="73" width="14" height="14" rx="2" fill="#f4b400"></rect>
+  <rect x="94" y="73" width="14" height="14" rx="2" fill="#f4b400"></rect>
+  <rect x="112" y="73" width="14" height="14" rx="2" fill="#38c172"></rect>
+  <rect x="130" y="73" width="14" height="14" rx="2" fill="#38c172"></rect>
+  <rect x="148" y="73" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+  <rect x="166" y="73" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+
+  <!-- РЯД 3 -->
+  <rect x="58" y="91" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+  <rect x="76" y="91" width="14" height="14" rx="2" fill="#f4b400"></rect>
+  <rect x="94" y="91" width="14" height="14" rx="2" fill="#f4b400"></rect>
+  <rect x="112" y="91" width="14" height="14" rx="2" fill="#38c172"></rect>
+  <rect x="130" y="91" width="14" height="14" rx="2" fill="#38c172"></rect>
+  <rect x="148" y="91" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+  <rect x="166" y="91" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+
+  <!-- РЯД 4 -->
+  <rect x="58" y="109" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+  <rect x="76" y="109" width="14" height="14" rx="2" fill="#f4b400"></rect>
+  <rect x="94" y="109" width="14" height="14" rx="2" fill="#f4b400"></rect>
+  <rect x="112" y="109" width="14" height="14" rx="2" fill="#38c172"></rect>
+  <rect x="130" y="109" width="14" height="14" rx="2" fill="#38c172"></rect>
+  <rect x="148" y="109" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+  <rect x="166" y="109" width="14" height="14" rx="2" fill="#cfcfcf"></rect>
+
+</svg>

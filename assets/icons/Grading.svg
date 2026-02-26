@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="200"
+   height="100"
+   viewBox="0 0 200 100"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="завантаження.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="5.8901995"
+     inkscape:cx="99.402406"
+     inkscape:cy="35.73733"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <!-- ГРАДИЕНТ ФОНА -->
+  <defs
+     id="defs2">
+    <linearGradient
+       id="gsGrad"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#4b8ed9"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#1f5fa3"
+         id="stop2" />
+    </linearGradient>
+  </defs>
+  <!-- ФОН КНОПКИ -->
+  <rect
+     x="0"
+     y="0"
+     width="200"
+     height="100"
+     rx="14"
+     fill="url(#gsGrad)"
+     id="rect2" />
+  <!-- ЗАГОЛОВОК -->
+  <text
+     x="26.621168"
+     y="41.714375"
+     font-size="18px"
+     font-weight="bold"
+     fill="#ffffff"
+     font-family="'Segoe UI', Arial, sans-serif"
+     id="text2">GRADING</text>
+  <text
+     x="20.679092"
+     y="64.940071"
+     font-size="18px"
+     font-weight="bold"
+     fill="#ffffff"
+     font-family="'Segoe UI', Arial, sans-serif"
+     id="text3">STANDARD</text>
+  <!-- ЛИСТ / АНКЕТА -->
+  <g
+     transform="translate(133.58208,16.692772)"
+     id="g6">
+    <rect
+       x="0"
+       y="0"
+       width="55"
+       height="65"
+       rx="6"
+       fill="#f2f2f2"
+       stroke="#8c8c8c"
+       stroke-width="1.5"
+       id="rect3" />
+    <!-- строки формы -->
+    <line
+       x1="10"
+       y1="18"
+       x2="45"
+       y2="18"
+       stroke="#b0b0b0"
+       stroke-width="2"
+       id="line3" />
+    <line
+       x1="10"
+       y1="30"
+       x2="45"
+       y2="30"
+       stroke="#b0b0b0"
+       stroke-width="2"
+       id="line4" />
+    <line
+       x1="10"
+       y1="42"
+       x2="35"
+       y2="42"
+       stroke="#b0b0b0"
+       stroke-width="2"
+       id="line5" />
+    <!-- чекбоксы -->
+    <rect
+       x="10"
+       y="48"
+       width="10"
+       height="10"
+       rx="2"
+       fill="none"
+       stroke="#8c8c8c"
+       stroke-width="1.5"
+       id="rect5" />
+    <path
+       d="m 12,53 3,3 5,-6"
+       stroke="#60c13d"
+       stroke-width="2"
+       fill="none"
+       stroke-linecap="round"
+       id="path5" />
+    <rect
+       x="28"
+       y="48"
+       width="10"
+       height="10"
+       rx="2"
+       fill="none"
+       stroke="#8c8c8c"
+       stroke-width="1.5"
+       id="rect6" />
+    <path
+       d="m 30,53 3,3 5,-6"
+       stroke="#60c13d"
+       stroke-width="2"
+       fill="none"
+       stroke-linecap="round"
+       id="path6" />
+    <!-- КРУГ С БУКВОЙ A -->
+    <circle
+       cx="43"
+       cy="12"
+       r="10"
+       fill="#60c13d"
+       id="circle6" />
+    <text
+       x="43"
+       y="16"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       font-family="'Segoe UI', Arial, sans-serif"
+       id="text6">A</text>
+  </g>
+</svg>
