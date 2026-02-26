@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
    ====================================================== */
 
 const pdfLink =
-  "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?e=XrWYzG";
+  "https://nestle.sharepoint.com/teams/PULS_Fabryky/Shared%20Documents/BHP_WEeak/BHP2026.pdf?CT=1772145332620&OR=ItemsView";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -258,5 +258,6 @@ document.addEventListener("DOMContentLoaded", () => {
         new Date().getTime();
 
     frame.src = embedUrl;
+
 
 });
