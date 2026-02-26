@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
    PDF SHAREPOINT VIEWER
    ====================================================== */
 
-const pdfLink = "https://nestle.sharepoint.com/teams/PULS_Fabryky/Shared%20Documents/BHP_WEeak/BHP2026.pdf";
+const pdfLink = "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?e=z68pLM";
 
 document.addEventListener("DOMContentLoaded", () => {
     const frame = document.getElementById("pdfFrame");
@@ -261,5 +261,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
