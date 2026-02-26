@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
    ====================================================== */
 
 const pdfLink =
-  "https://nestle.sharepoint.com/teams/PULS_Fabryky/Shared%20Documents/BHP_WEeak/BHP2026.pdf?CT=1772145332620&OR=ItemsView";
+  "https://nestle.sharepoint.com/teams/PULS_Fabryky/Shared%20Documents/Forms/AllItems.aspx?viewid=2111b43f%2Dfb0f%2D464a%2D989d%2Db6403d90526b&newTargetListUrl=%2Fteams%2FPULS%5FFabryky%2FShared%20Documents&viewpath=%2Fteams%2FPULS%5FFabryky%2FShared%20Documents%2FForms%2FAllItems%2Easpx&id=%2Fteams%2FPULS%5FFabryky%2FShared%20Documents%2FBHP%5FWEeak%2FBHP2026%2Epdf&parent=%2Fteams%2FPULS%5FFabryky%2FShared%20Documents%2FBHP%5FWEeak";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -261,3 +261,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
