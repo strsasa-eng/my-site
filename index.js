@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
    PDF SHAREPOINT VIEWER
    ====================================================== */
 
-const pdfLink = "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?e=z68pLM";
+const pdfLink = "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?web=1";
 
 document.addEventListener("DOMContentLoaded", () => {
     const frame = document.getElementById("pdfFrame");
@@ -261,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
