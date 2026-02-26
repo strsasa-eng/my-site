@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
    ====================================================== */
 
 const pdfLink =
-  "https://nestle-my.sharepoint.com/:u:/p/oleksandr_strelnikov_pl/IQDTCbaXY4g1SLDWS39ATqwpAQeUKuzCh6KZzad3H-9myfU?e=9bX7eg";
+  "https://1drv.ms/b/c/7769a2aba2bfe094/IQB9JdMi3BlrTbSNspd93CRQAWbiWo9o4GrZGlrXHjJKKKA?e=Yv1eH8";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -261,5 +261,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
