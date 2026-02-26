@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
    ====================================================== */
 
 const pdfLink =
-  "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?e=XrWYzG";
+  "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?action=embedview";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -258,5 +258,6 @@ document.addEventListener("DOMContentLoaded", () => {
         new Date().getTime();
 
     frame.src = embedUrl;
+
 
 });
