@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const frame = document.getElementById("pdfFrame");
-    const link = "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?web=1";
+    const link = "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?e=XrWYzG";
     
     if (frame) {
         frame.src = link;
@@ -267,6 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
