@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
    ====================================================== */
 
 const pdfLink =
-  "https://nestle.sharepoint.com/teams/PULS_Fabryky/Shared%20Documents/Forms/AllItems.aspx?viewid=2111b43f%2Dfb0f%2D464a%2D989d%2Db6403d90526b&newTargetListUrl=%2Fteams%2FPULS%5FFabryky%2FShared%20Documents&viewpath=%2Fteams%2FPULS%5FFabryky%2FShared%20Documents%2FForms%2FAllItems%2Easpx&id=%2Fteams%2FPULS%5FFabryky%2FShared%20Documents%2FBHP%5FWEeak%2FBHP2026%2Epdf&parent=%2Fteams%2FPULS%5FFabryky%2FShared%20Documents%2FBHP%5FWEeak";
+  "https://nestle-my.sharepoint.com/:u:/p/oleksandr_strelnikov_pl/IQDTCbaXY4g1SLDWS39ATqwpAQeUKuzCh6KZzad3H-9myfU?e=9bX7eg";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -261,4 +261,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
