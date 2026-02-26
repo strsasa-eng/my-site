@@ -242,14 +242,14 @@ document.addEventListener('DOMContentLoaded', () => {
    PDF SHAREPOINT VIEWER
    ====================================================== */
 
-const pdfLink =
-  "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?action=embedview";
+const pdfLink = "https://nestle.sharepoint.com";
 
 document.addEventListener("DOMContentLoaded", () => {
-
     const frame = document.getElementById("pdfFrame");
-
-    if (!frame) return;
+    if (frame) {
+        frame.src = pdfLink;
+    }
+});
 
     // добавляем embed режим + анти кеш
     const embedUrl =
@@ -261,3 +261,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
