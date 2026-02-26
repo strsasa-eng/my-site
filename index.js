@@ -251,7 +251,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!frame) return;
 
-
     // добавляем embed режим + анти кеш
     const embedUrl =
         pdfLink +
@@ -260,13 +259,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     frame.src = embedUrl;
 
-
 });
-
-
-
-
-
-
-
-
