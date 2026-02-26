@@ -123,4 +123,5 @@ function closeContactCard() {
       btn.focus();
     }
   });
-})();
+
+});
