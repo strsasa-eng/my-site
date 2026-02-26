@@ -242,20 +242,15 @@ document.addEventListener('DOMContentLoaded', () => {
    PDF SHAREPOINT VIEWER
    ====================================================== */
 
+const pdfLink =
+  "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?e=XrWYzG";
+
 document.addEventListener("DOMContentLoaded", () => {
+
     const frame = document.getElementById("pdfFrame");
-    const link = "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?e=XrWYzG";
-    
-    if (frame) {
-        frame.src = link;
-        
-        // Dodatkowe zabezpieczenie: jeśli po 3 sekundach nic się nie pojawi (użytkownik nie widzi PDF)
-        // wyświetlamy komunikat z bezpośrednim linkiem pod ramką.
-        const msg = document.createElement("p");
-        msg.innerHTML = `Jeśli plik się nie ładuje, <a href="${link}" target="_blank">kliknij tutaj, aby go otworzyć</a>.`;
-        frame.after(msg);
-    }
-});
+
+    if (!frame) return;
+
 
     // добавляем embed режим + анти кеш
     const embedUrl =
@@ -267,6 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
