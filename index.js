@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const year = 2026;
 
-  const basePath = "https://nestle.sharepoint.com/teams/StartFabryk/Shared%20Documents/Kalendarz";
+  const basePath = "https://nestle.sharepoint.com/teams/PULS_Fabryky/Shared%20Documents/PulsFabryky/Grafik/";
 
   const monthsPL = [
     'Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec',
@@ -261,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
