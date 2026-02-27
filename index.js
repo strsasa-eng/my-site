@@ -99,7 +99,7 @@ document.querySelectorAll(".video-btn").forEach(btn => {
 document.addEventListener('DOMContentLoaded', () => {
 
   /* 📊 ГОДОВОЙ ГРАФИК */
-  const yearlyGrafikURL = "https://nestle.sharepoint.com/:x:/t/PULS_Fabryky/IQDuxcLdsc3LSKG2y-KBrygJAQD_JNd9P6BAhcaXtOwTIBw?e=z3HUcA";
+  const yearlyGrafikURL = "https://nestle.sharepoint.com/:x:/t/PULS_Fabryky/IQDuxcLdsc3LSKG2y-KBrygJAc38vuk5BsrvCyk110taSQc?e=02hhr1";
 
   const container = document.getElementById('monthsContainer');
   const previewBox = document.getElementById('previewBox');
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const year = 2026;
 
-  const basePath = "https://nestle.sharepoint.com/:f:/t/PULS_Fabryky/IgBeB1Co4O9cQpSUcuDwZNx-ATi62vEMDE91rXOrKT_sMxs?e=yhClL1";
+  const basePath = "https://nestle.sharepoint.com/teams/PULS_Fabryky/Shared%20Documents/PulsFabryky/Grafik";
 
   const monthsPL = [
     'Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec',
@@ -261,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
