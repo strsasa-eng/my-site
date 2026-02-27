@@ -99,7 +99,7 @@ document.querySelectorAll(".video-btn").forEach(btn => {
 document.addEventListener('DOMContentLoaded', () => {
 
   /* 📊 ГОДОВОЙ ГРАФИК */
-  const yearlyGrafikURL = "https://nestle.sharepoint.com/:x:/t/StartFabryk/IQDNfMEFxFLfTaqy4aEfixPBAYEBPPKDSx15xHeoSM121io?e=2ZBh2h";
+  const yearlyGrafikURL = "https://nestle.sharepoint.com/:x:/t/PULS_Fabryky/IQDuxcLdsc3LSKG2y-KBrygJAQD_JNd9P6BAhcaXtOwTIBw?e=z3HUcA";
 
   const container = document.getElementById('monthsContainer');
   const previewBox = document.getElementById('previewBox');
@@ -261,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
