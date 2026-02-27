@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
    ====================================================== */
 
 const pdfLink =
-  "https://1drv.ms/b/c/7769a2aba2bfe094/IQB9JdMi3BlrTbSNspd93CRQAWbiWo9o4GrZGlrXHjJKKKA?e=Yv1eH8";
+  "https://drive.google.com/file/d/1tcrlqi-ioN0v6jRPg7VP81NPanJrDcgi/view?usp=sharing";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -261,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
