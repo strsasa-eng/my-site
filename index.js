@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const year = 2026;
 
-  const basePath = "https://nestle.sharepoint.com/:f:/t/PULS_Fabryky/IgBeB1Co4O9cQpSUcuDwZNx-ATfT3xvSNNPVikxxmrO1Htw?e=cIHfe5";
+  const basePath = "https://nestle.sharepoint.com/:f:/t/PULS_Fabryky/IgBeB1Co4O9cQpSUcuDwZNx-ATi62vEMDE91rXOrKT_sMxs?e=yhClL1";
 
   const monthsPL = [
     'Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec',
@@ -261,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
