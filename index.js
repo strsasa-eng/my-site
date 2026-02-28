@@ -228,16 +228,53 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ---------- TEAMS (ЗАГОТОВКА) ---------- */
-    document.querySelectorAll('.person').forEach(person => {
-        person.addEventListener('click', () => {
-            const name = person.dataset.name;
-            if (!name) return;
+    const siteUrl = "https://nestle.sharepoint.com/teams/PULS_Fabryky/"; // <-- ЗМІНИ НА СВІЙ URL
+const listName = "Automatics_list"; // <-- НАЗВА СПИСКУ
 
-            console.log('Teams click:', name);
-        });
+async function loadList() {
+    const url = `${siteUrl}/_api/web/lists/getbytitle('${listName}')/items?$select=Title,ProfileLink`;
+
+    const response = await fetch(url, {
+        method: "GET",
+        credentials: "include",
+        headers: {
+            "Accept": "application/json;odata=nometadata"
+        }
     });
 
-});
+    if (!response.ok) {
+        console.error("Error:", response.status);
+        return [];
+    }
+
+    const data = await response.json();
+    return data.value;
+}
+
+async function renderPeople() {
+    const people = await loadList();
+    const container = document.getElementById("peopleContainer");
+
+    container.innerHTML = "";
+
+    people.forEach(person => {
+
+        const div = document.createElement("div");
+        div.className = "person";
+        div.textContent = person.Title;
+
+        div.addEventListener("click", () => {
+            if (person.ProfileLink && person.ProfileLink.Url) {
+                window.open(person.ProfileLink.Url, "_blank");
+            }
+        });
+
+        container.appendChild(div);
+    });
+}
+
+renderPeople();
+
 /* ======================================================
    PDF SHAREPOINT VIEWER
    ====================================================== */
@@ -261,6 +298,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
