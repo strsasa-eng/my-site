@@ -99,7 +99,7 @@ document.querySelectorAll(".video-btn").forEach(btn => {
 document.addEventListener('DOMContentLoaded', () => {
 
   /* 📊 ГОДОВОЙ ГРАФИК */
-  const yearlyGrafikURL = "https://nestle.sharepoint.com/:x:/t/PULS_Fabryky/IQDuxcLdsc3LSKG2y-KBrygJAc38vuk5BsrvCyk110taSQc?e=02hhr1";
+  const yearlyGrafikURL = "https://nestle.sharepoint.com/:x:/t/StartFabryk/IQDNfMEFxFLfTaqy4aEfixPBAYEBPPKDSx15xHeoSM121io?e=2ZBh2h";
 
   const container = document.getElementById('monthsContainer');
   const previewBox = document.getElementById('previewBox');
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const year = 2026;
 
-  const basePath = "https://nestle.sharepoint.com/teams/PULS_Fabryky/Shared%20Documents/PulsFabryky/Grafik";
+  const basePath = "https://nestle.sharepoint.com/teams/StartFabryk/Shared%20Documents/Kalendarz";
 
   const monthsPL = [
     'Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec',
@@ -226,24 +226,59 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+ 
+   const siteUrl = "https://nestle.sharepoint.com/teams/PULS_Fabryky/"; // <-- ЗМІНИ НА СВІЙ URL
+const listName = "Automatics_list"; // <-- НАЗВА СПИСКУ
 
-    /* ---------- TEAMS (ЗАГОТОВКА) ---------- */
-    document.querySelectorAll('.person').forEach(person => {
-        person.addEventListener('click', () => {
-            const name = person.dataset.name;
-            if (!name) return;
+async function loadList() {
+    const url = `${siteUrl}/_api/web/lists/getbytitle('${listName}')/items?$select=Title,ProfileLink`;
 
-            console.log('Teams click:', name);
-        });
+    const response = await fetch(url, {
+        method: "GET",
+        credentials: "include",
+        headers: {
+            "Accept": "application/json;odata=nometadata"
+        }
     });
 
-});
+    if (!response.ok) {
+        console.error("Error:", response.status);
+        return [];
+    }
+
+    const data = await response.json();
+    return data.value;
+}
+
+async function renderPeople() {
+    const people = await loadList();
+    const container = document.getElementById("peopleContainer");
+
+    container.innerHTML = "";
+
+    people.forEach(person => {
+
+        const div = document.createElement("div");
+        div.className = "person";
+        div.textContent = person.Title;
+
+        div.addEventListener("click", () => {
+            if (person.ProfileLink && person.ProfileLink.Url) {
+                window.open(person.ProfileLink.Url, "_blank");
+            }
+        });
+
+        container.appendChild(div);
+    });
+}
+
+renderPeople();
 /* ======================================================
    PDF SHAREPOINT VIEWER
    ====================================================== */
 
 const pdfLink =
-  "https://drive.google.com/file/d/1tcrlqi-ioN0v6jRPg7VP81NPanJrDcgi/view?usp=sharing";
+  "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQBfZnUd3GY_Try1uJCtCW0_AQoL55wLn1E0RuNw6D4fu1g?e=XrWYzG";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -258,17 +293,5 @@ document.addEventListener("DOMContentLoaded", () => {
         new Date().getTime();
 
     frame.src = embedUrl;
-
-
-});
-
-
-
-
-
-
-
-
-
-
-
+})
+})
