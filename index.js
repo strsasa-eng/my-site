@@ -280,7 +280,7 @@ renderPeople();
    ====================================================== */
 
 const pdfLink =
-  "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQDLZCHQwVPOQIwWeiLTsZwiAa1N4dz6j6YaD8QZgGk0fBM?e=dGKuLW";
+  "https://nestle.sharepoint.com/teams/PULS_Fabryky/Shared%20Documents/BHP_WEeak/BHP2026.pdf";
 
 document.addEventListener("DOMContentLoaded", () => {
 
