@@ -280,7 +280,7 @@ renderPeople();
    ====================================================== */
 
 const pdfLink =
-  "https://drive.google.com/file/d/1tcrlqi-ioN0v6jRPg7VP81NPanJrDcgi/view?usp=sharing";
+  "https://nestle.sharepoint.com/:b:/t/PULS_Fabryky/IQDLZCHQwVPOQIwWeiLTsZwiAa1N4dz6j6YaD8QZgGk0fBM?e=dGKuLW";
 
 document.addEventListener("DOMContentLoaded", () => {
 
