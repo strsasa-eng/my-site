@@ -104,8 +104,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('monthsContainer');
   const previewBox = document.getElementById('previewBox');
   const previewImg = document.getElementById('previewImg');
+    /* Julian */
+  const yearlyGrafikURL = "https://nestle.sharepoint.com/:i:/t/PULS_Fabryky/IQAo18SGjFDYSLGZkzqJcqF4AVX5oJjTPYQkDsLDkqTItJc?e=kFNflN";
 
-  /* ГОДОВОЙ */
+  const container = document.getElementById('monthsContainer');
+  const previewBox = document.getElementById('previewBox');
+  const previewImg = document.getElementById('previewImg');
+
+  /*month */
   const yearlyItem = document.createElement('div');
   yearlyItem.className = 'graph-item';
   yearlyItem.textContent = '📊 Grafik roczny';
