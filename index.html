@@ -291,8 +291,22 @@
                             </div>
                         </div>
                     </div>
-                    <button class="icon-btn tooltip" data-url="https://wms.wro.pl.nestle.com/WMS_Extentions/Wms/WasteAreaSelection?wastePointsModelID=4&amp;errorMessage=ID%20punktu%20odpadu:%20:%20F7-L12-NOVA23%2C%20Kontener:%20%20:%2010-10-10-2440%20-%20Kontener%20zosta%C5%82%20prawid%C5%82owo%20przypisany%20do%20punktu%20odpadu." onclick="openLink(event)"> 
-                        <img src="assets/icons/wms.svg" alt="WMS"> 
+                    <div class="dropdown">
+                        <button class="icon-btn tooltip">
+                           <img src="assets/icons/wms.svg" alt="WMS"> 
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="menu-item">
+                           </div>
+                            <div class="menu-item">
+                                <a href="https://wms.wro.pl.nestle.com/WMS_Extentions/Wms/WasteAreaSelection?wastePointsModelID=4&amp;errorMessage=ID%20punktu%20odpadu:%20:%20F7-L12-NOVA23%2C%20Kontener:%20%20:%2010-10-10-2440%20-%20Kontener%20zosta%C5%82%20prawid%C5%82owo%20przypisany%20do%20punktu%20odpadu." class="menu-link" onclick="openInNewWindow(event, this.href)">
+                   
+              WMS </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="https://plwrol9996.nestle.com/DMO_PREPROD/core/ajs-operator-console-listing" class="menu-link" onclick="openInNewWindow(event, this.href)">
+               WMS_DMO </a>
+                     
                     </button>
                     <button class="icon-gig tooltip" data-url="http://plwroa0006/common/login/" onclick="openLink(event)"> 
                         <img src="assets/icons/Grading.svg" alt="Grading">
